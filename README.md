@@ -39,21 +39,17 @@ cp .env.example .env
 Fill in `.env`:
 
 ```env
-# Firebase Web App config (Firebase Console → Project settings → Your apps)
-VITE_FIREBASE_API_KEY=AIzaSyCwZdEFBgO16wGgbY6oWdgEY31z-wlhyV4
-VITE_FIREBASE_AUTH_DOMAIN=educheck-ai-2c412.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=educheck-ai-2c412
-VITE_FIREBASE_STORAGE_BUCKET=educheck-ai-2c412.firebasestorage.app
-VITE_FIREBASE_MESSAGING_SENDER_ID=822801075035
-VITE_FIREBASE_APP_ID=1:822801075035:web:b08a794ad2f5677eece87e
+# Firebase
+VITE_FIREBASE_API_KEY=...
+VITE_FIREBASE_AUTH_DOMAIN=...
+VITE_FIREBASE_PROJECT_ID=...
+VITE_FIREBASE_STORAGE_BUCKET=...
+VITE_FIREBASE_MESSAGING_SENDER_ID=...
+VITE_FIREBASE_APP_ID=...
 
-# Set to true when running Firebase emulators locally
-VITE_USE_FUNCTIONS_EMULATOR=false
-
-# Google Gemini (runs in browser — get key at https://aistudio.google.com/apikey)
-VITE_GEMINI_API_KEY=AIzaSyC-nB9UQ2JHbUXR1hHddHwFAfRVGPiPvKc
-# Optional: gemini-2.0-flash (default), gemini-1.5-flash, gemini-2.5-flash-preview, etc.
-VITE_GEMINI_MODEL=gemini-2.5-flash
+# Gemini (runs in browser — https://aistudio.google.com/apikey)
+VITE_GEMINI_API_KEY=
+VITE_GEMINI_MODEL=gemini-2.0-flash
 ```
 
 ### 3. Deploy Firestore rules
